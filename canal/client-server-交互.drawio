@@ -1,9 +1,291 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T11:17:58.624Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" version="21.2.2" etag="gdU9iS2zzdyNU3NpALut" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-26T12:16:06.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="R6sztpsv9fzYwHzlT_GE" version="21.2.2" type="github">
   <diagram name="第 1 页" id="RETmzyush9rxdVnmZG2J">
-    <mxGraphModel>
+    <mxGraphModel dx="1562" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-2" value="SimpleCanalConnector" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="40" height="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry x="15" y="200" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-11" value="收到 HandShake 包验证版本信息" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-10" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="180" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry x="20" y="425" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-17" value="验证 Ack 报文（看是不是有错误码）" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-16" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="405" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-49" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry x="15" y="1300" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-50" value="解析报文 -&amp;gt; Message 对象（包含 batchId)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-49" parent="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="1280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-3" value="CanalServerWithNetty" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" vertex="1" parent="1">
+          <mxGeometry x="460" y="150" width="50" height="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="15" y="320" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-14" value="鉴权通过" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-13" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="300" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="50" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="10" y="530" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-20" value="启动相应的 CanalInstance" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-19" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="530" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="45" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="20" y="570" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-22" value="启动 CanalInstance 的 MetaManager 组件" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-21" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="575" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-24" value="MetaManager 保存 client 的订阅信息" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="620" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="60" y="650" />
+            </Array>
+            <mxPoint x="35" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="20" y="720" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-31" value="" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-21" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="770" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="90" y="770" />
+              <mxPoint x="90" y="660" />
+            </Array>
+            <mxPoint x="35" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-32" value="更新 Position 信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_pQDKM7HOxM7CE9gzZzL-31">
+          <mxGeometry x="0.16" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-33" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="20" y="822" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-35" value="EventParser 根据 client 的订阅信息，设置 EventFilter" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="830" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="60" y="860" />
+            </Array>
+            <mxPoint x="35" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="20" y="1060" width="10" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-41" value="找到对应的 CanalInstance" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="_pQDKM7HOxM7CE9gzZzL-40" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="1040" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="30" y="1090" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-53" value="解析 ClientAck 类型报文" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="1480" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="1510" />
+            </Array>
+            <mxPoint x="30" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-54" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="20" y="1550" width="10" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-56" value="找到 client 对应的 CanalInstance" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="1530" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="60" y="1560" />
+            </Array>
+            <mxPoint x="35" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-57" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="30" y="1580" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-60" value="更新 batchId 信息" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1590" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="1620" />
+            </Array>
+            <mxPoint x="45" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-62" value="更新游标 curcor 信息" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1640" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="1670" />
+            </Array>
+            <mxPoint x="45" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-63" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="30" y="1710" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-66" value="删除 Event&amp;nbsp;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="1720" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="1750" />
+            </Array>
+            <mxPoint x="50" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-8" value="connect()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry x="0.0014" width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="250" as="sourcePoint" />
+            <mxPoint x="200" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-9" value="发送一个 Handshake 包" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="_pQDKM7HOxM7CE9gzZzL-3" target="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="370" y="290" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-12" value="发送 ClientAuth 包" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="420" as="sourcePoint" />
+            <mxPoint x="200" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-15" value="发送 Ack 报文" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="_pQDKM7HOxM7CE9gzZzL-3" target="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="400" y="530" as="sourcePoint" />
+            <mxPoint x="480" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-18" value="发送订阅信息（订阅那个 canalInstance）（报文类型：Sub)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="650" as="sourcePoint" />
+            <mxPoint x="200" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-27" value="首次订阅，无法从 MetaManager 找到 Position，从EventStore 找 position" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="870" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="515" y="900" />
+            </Array>
+            <mxPoint x="490" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-36" value="EventParser" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="990" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-37" value="EventStore" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="890" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-38" value="MetaManager" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="750" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-39" value="get()。（报文类型：get，包括取多少数据 ...)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="1150" as="sourcePoint" />
+            <mxPoint x="200" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-44" value="Ack 后第一次取数据，从 EventStore 中取。（注意：后续取数据先从 MetaManager 获取位置信息，再从 EventStore 中取数据）" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1250" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="530" y="1280" />
+            </Array>
+            <mxPoint x="505" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-45" value="EventStore" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1270" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-47" value="拉取到了一系列 Event" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1310" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="530" y="1340" />
+            </Array>
+            <mxPoint x="505" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-48" value="包装成 Message 返回" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="1400" as="sourcePoint" />
+            <mxPoint x="560" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-51" value="ack( batchId)。（报文类型：clientAck）" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="1600" as="sourcePoint" />
+            <mxPoint x="200" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-58" value="MetaManager" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1750" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-64" value="EventStore" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1880" width="80" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
