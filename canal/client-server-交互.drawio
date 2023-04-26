@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T12:16:06.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="R6sztpsv9fzYwHzlT_GE" version="21.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-26T12:16:27.806Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="z73n7Q4SMHv7NFApAr_f" version="21.2.2" type="github">
   <diagram name="第 1 页" id="RETmzyush9rxdVnmZG2J">
     <mxGraphModel dx="1562" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -201,7 +201,7 @@
         </mxCell>
         <mxCell id="_pQDKM7HOxM7CE9gzZzL-12" value="发送 ClientAuth 包" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_pQDKM7HOxM7CE9gzZzL-3">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="120" y="420" as="sourcePoint" />
+            <mxPoint x="120" y="400" as="sourcePoint" />
             <mxPoint x="200" y="420" as="targetPoint" />
             <Array as="points">
               <mxPoint x="290" y="400" />
