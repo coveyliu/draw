@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T12:16:27.806Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="z73n7Q4SMHv7NFApAr_f" version="21.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-26T12:20:35.051Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="nfjGvNXtjBTPtn9QPTeC" version="21.2.2" type="github">
   <diagram name="第 1 页" id="RETmzyush9rxdVnmZG2J">
     <mxGraphModel dx="1562" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -285,6 +285,12 @@
         </mxCell>
         <mxCell id="_pQDKM7HOxM7CE9gzZzL-64" value="EventStore" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="1880" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-67" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="950" y="270" width="20" height="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="_pQDKM7HOxM7CE9gzZzL-68" value="&lt;b&gt;这里所有的交互除了通信，其它消费 binlog 的交互都是与嵌入式 CanalServerWithEmbeded 交互的&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1109.5" width="210" height="81" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
