@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-13T01:30:26.356Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="aG4S1FmmdHm_B6obDzzM" version="21.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-13T01:53:44.958Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="1DhkIFvpsUI0IGqf03nv" version="21.2.4" type="github">
   <diagram name="第 1 页" id="NyTdN3R4pWH1FEbbZ2PK">
-    <mxGraphModel dx="794" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1246" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,12 +30,6 @@
         <mxCell id="8ypZ_t7LDL61UNbeQllf-13" value="EventTransactionBuffer&lt;br&gt;( private Canal.Entry[ ] )" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="205" y="450" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8ypZ_t7LDL61UNbeQllf-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="8ypZ_t7LDL61UNbeQllf-20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="440" as="targetPoint" />
-            <mxPoint x="275" y="260" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-16" value="LogEvent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="235" y="230" width="80" height="20" as="geometry" />
         </mxCell>
@@ -44,9 +38,6 @@
         </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-20" value="Canal.Entry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="235" y="400" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="8ypZ_t7LDL61UNbeQllf-26" value="Filter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="235" y="329" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-29" value="LogEventConvertor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="90" y="323" width="110" height="26" as="geometry" />
@@ -60,12 +51,13 @@
         <mxCell id="8ypZ_t7LDL61UNbeQllf-35" value="EventSink" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="540" y="420" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8ypZ_t7LDL61UNbeQllf-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ypZ_t7LDL61UNbeQllf-36">
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="750" y="480" as="targetPoint" />
+            <mxPoint x="761" y="480" as="targetPoint" />
+            <mxPoint x="631" y="480" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8ypZ_t7LDL61UNbeQllf-36" value="CanalEventFilter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-36" value="CanalEventFilter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="520" y="467.5" width="100" height="25" as="geometry" />
         </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ypZ_t7LDL61UNbeQllf-13">
@@ -73,14 +65,26 @@
             <mxPoint x="520" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8ypZ_t7LDL61UNbeQllf-38" value="List&amp;lt;Canal.Entry&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3333FF;" vertex="1" parent="1">
-          <mxGeometry x="650" y="455" width="70" height="30" as="geometry" />
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-38" value="List&amp;lt;Canal.Entry&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#d80073;" vertex="1" parent="1">
+          <mxGeometry x="660" y="455" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
           <mxGeometry x="770" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8ypZ_t7LDL61UNbeQllf-40" value="EventStore" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="790" y="420" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="390" as="targetPoint" />
+            <mxPoint x="275" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-44" value="CanalEventFilter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="225" y="308" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="8ypZ_t7LDL61UNbeQllf-47" value="filter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="225" y="337" width="100" height="25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
